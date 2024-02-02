@@ -1,0 +1,120 @@
+.button-primary {
+    background-color: var(--main-color);
+    border-color: gray;
+    border-style: none;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    font-size: 17px;
+    margin: 30px 0px;
+}
+
+.button-primary:hover {
+    background-color: rgb(58, 93, 177);
+}
+
+.square-cadre {
+    border-radius: 5px;
+    width: 480px;
+    height: 360px;
+    max-width: 700px;
+    max-height: 700px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+
+    padding: 2vw;
+}
+
+.contract-item {
+    height: 15vh;
+        min-height: 50px;
+        max-height: 100px;
+    width: 100%;
+        min-width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contract-item > a {
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    padding: 10px;
+
+    /* Pour l'animation */
+    position: relative;
+}
+/*
+.contract-item:hover p {
+    color: rgb(60, 60, 60);
+}*/
+.contract-item a::after {
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 3px; 
+    background: var(--main-color);
+    transition: transform .4s;
+}
+
+.contract-item:hover a::after {
+    transform: scaleX(1);
+}
+
+.contract-item > a > h2 { color: black; }
+.contract-item > a > p { 
+    color: gray; 
+    margin: 0px;
+}
+
+/* Bouton ajout de contrat */
+#add-contrat-button {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 35%;
+    border: solid 2px var(--main-color);
+
+    background-color: lightgray;
+    position: relative;
+
+    transition: background-color 0.5s;
+}
+
+#add-contrat-button > * {
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    position: absolute;
+    transition: background-color 0.5s;
+}
+
+#add-contrat-button > hr:first-child {
+    height: 30px;
+    width: 5px;
+    top: 2px;
+    left: 21px; 
+}
+
+#add-contrat-button > hr:nth-child(2) {
+    height: 5px;
+    width: 30px;
+    top: 14px;
+    left: 8px;
+}
+
+#add-contrat-button:hover {
+    background-color: var(--main-color);
+}
+#add-contrat-button:hover > * {
+    background-color: white;
+}

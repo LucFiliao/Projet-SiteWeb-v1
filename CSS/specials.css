@@ -1,0 +1,74 @@
+/* formulaire de connexion */
+#connexion-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#connexion-form input {
+    height: 30px;
+    margin-bottom: 12px;
+    margin-top: 2px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    background-color: rgb(228, 228, 228);
+}
+
+#connexion-form label {
+    color: rgb(88, 88, 88);
+}
+
+#connexion-form-background {
+    background-image: url('/Sources/blue-background-2.jpg');
+    background-size: cover;
+}
+
+/* profil user dans nav */
+#profile-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(86, 86, 86);
+    width: 290px;
+    margin: 0px 0px 0px 10px;
+}
+
+#profile-user span {
+    color: black;
+    font-weight: bold;
+}
+
+/* disposition page ecran home user */
+#home-user-page {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-image: url('../Sources/blue-background-1.jpg');
+    background-size: cover;
+}
+
+/* liste des contrats sur écran accueil */
+#home-user-content {
+    margin-top: 17vh;
+    margin-left: 2vh;
+    padding-top: 5vh;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+}
+#contract-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Pour permettre le scroll  */
+#contract-list-container {
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none; /* Enleve la barre de scroll */
+}
+
+#add-contrat {
+    display: flex;
+    align-items: center;
+}
