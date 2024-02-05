@@ -13,9 +13,11 @@ footer {
     bottom: 0px; left: 0px; right: 0px;
     background-color: white;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     gap: 20px;
     padding-right: 30px;
+    z-index: 1;
 }
 
 h1, h2, h3 {
@@ -30,6 +32,10 @@ h2 {
 a {
     text-decoration: none;
     color: var(--main-color);
+}
+
+span {
+    font-weight: bold;
 }
 
 #connexion-form-container h2 {
@@ -48,7 +54,9 @@ header {
     align-items: center;
     gap: 0px;
 
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 header > * {
@@ -72,10 +80,31 @@ nav > a {
     flex-shrink: 0;
     width: 150px;
     height: 30px;
+
+    position: relative;
     transition: background-color 0.5s;
 }
 
-nav > a:hover {
+nav > a::before {
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 2px;
+
+    height: 1.5px;
+    width: 100%;
+    bottom: 0px;
+
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+
+nav > a:hover::before {
+    transform: scaleX(0.9);
+}
+
+/* Page active dans nav */
+nav > a.active-page {
     background-color: var(--main-color);
     color: white;
 }
@@ -84,9 +113,12 @@ nav > a:hover {
 aside.menu-lateral {
     background-color: lightgray;
     padding: 10px;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
     display: grid;
     grid-template-rows: 50px 70vh 70px;
+    position: sticky;
+    width: 280px;
+    z-index: 1;
 }
 
 aside.menu-lateral > h2 {

@@ -30,13 +30,25 @@
     align-items: center;
     gap: 10px;
     color: rgb(86, 86, 86);
-    width: 290px;
+    width: 285px;
     margin: 0px 0px 0px 10px;
 }
 
 #profile-user span {
     color: black;
     font-weight: bold;
+}
+
+/* deconnexion area dans header */
+#deconnexion-area {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+#deconnexion-area > a > button {
+    margin: 0px;
 }
 
 /* disposition page ecran home user */
@@ -48,13 +60,6 @@
 }
 
 /* liste des contrats sur écran accueil */
-#home-user-content {
-    margin-top: 17vh;
-    margin-left: 2vh;
-    padding-top: 5vh;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0);
-}
 #contract-list {
     display: flex;
     flex-direction: column;
