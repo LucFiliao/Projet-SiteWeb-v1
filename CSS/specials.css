@@ -20,7 +20,7 @@
 }
 
 #connexion-form-background {
-    background-image: url('/Sources/blue-background-2.jpg');
+    background-image: url('http://localhost/Projet-SiteWeb-v1/Sources/blue-background-2.jpg');
     background-size: cover;
 }
 
@@ -55,7 +55,7 @@
 #home-user-page {
     display: grid;
     grid-template-columns: 300px 1fr;
-    background-image: url('../Sources/blue-background-1.jpg');
+    background-image: url('http://localhost/Projet-SiteWeb-v1/Sources/blue-background-1.jpg');
     background-size: cover;
 }
 

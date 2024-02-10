@@ -1,5 +1,5 @@
-<?php require_once '../PHP-Required/head.php' ?>
-<?php require_once '../PHP-Required/header.php' ?>
+<?php require_once '../../PHP-Required/head.php' ?>
+<?php require_once '../../PHP-Required/header.php' ?>
 
 <div class="centering-elements flex-column page-content">
     <div class="flex-column narrow-content">
@@ -30,4 +30,4 @@
     </div>
 </div>
     
-<?php require_once '../PHP-Required/footer.php' ?>
+<?php require_once '../../PHP-Required/footer.php' ?>
